@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Ingresar</h2>
+            <form >
+                                
+                <div class="form-group">
+                    <label>Numero De Contrato</label>
+                    <input type="text"  name="NumeroDeContrato"  [(ngModel)]="estampilla.nContrato" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Objeto Del Contrato</label>
+                    <input type="text"  name="ObjetoDelContrato"  [(ngModel)]="estampilla.objContrato" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Valor Del Contrato</label>
+                    <input type="number"  name="ValorDelContrato"  [(ngModel)]="estampilla.vContrato" class="form-control" />
+                </div>
+                
+                <div class="form-group">
+
+                    <label>Apoya Emergencia Covid-19:
+                      <select [(ngModel)]="estampilla.apoyaCovid19" name="ApoyaEmergenciaCovid19" >
+
+                        <option>Si</option>
+                        <option>No</option>
+                        </select>
+                    </label>
+                  </div>
+               
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1"(click)="add()">Guardar</button>
+                    <button class="btn btn-secondary" type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
